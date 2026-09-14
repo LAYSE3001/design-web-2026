@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 10 – Seção de Eventos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css" />
+</head>
+
+<body>
+
+    <!-- =========== Eventos ================= -->
+    <section class="bg-[#E8F2EC] py-8 md:py-12">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Cabeçalho da seção -->
+            <div class="flex flex-wrap justify-between items-center gap-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#23472B]">Eventos</h2>
+
+                <a href="/eventos/" class="border border-[#58B06B] rounded-full px-5 py-2 text-sm font-semibold text-[#23472B] hover:bg-[#23472B] hover:text-white transition">
+                    Todos os eventos
+                    <i class="ph ph-caret-right"></i>
+                </a>
+
+                <div class="w-full md:w-1/2">
+                    <p class="text-[#23472B] leading-relaxed">
+                        Conheça todos os eventos - atividades, festivais, congressos, palestras e outros - que englobam
+                        os <i>campi</i> do IFRN em diferentes escalas de alcance social.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grade de cards -->
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8
+                [&>a]:bg-white [&>a]:rounded-2xl [&>a]:border [&>a]:border-[#AAD8B5] [&>a]:p-6 [&>a]:flex [&>a]:flex-col [&>a]:gap-4 [&>a]:min-h-52 [&>a]:hover:shadow-md [&>a]:hover:border-[#58B06B] [&>a]:transition
+                [&>a>span:first-child]:text-xs [&>a>span:first-child]:font-semibold [&>a>span:first-child]:text-[#23472B]
+                [&>a>span:nth-child(2)]:self-start [&>a>span:nth-child(2)]:text-xs [&>a>span:nth-child(2)]:text-gray-600 [&>a>span:nth-child(2)]:border [&>a>span:nth-child(2)]:border-gray-300 [&>a>span:nth-child(2)]:rounded-full [&>a>span:nth-child(2)]:px-3 [&>a>span:nth-child(2)]:py-1
+                [&>a>h3]:text-base [&>a>h3]:font-medium [&>a>h3]:text-[#1A1A1A] [&>a>h3]:leading-tight [&>a>h3]:flex-1
+                [&>a>div]:flex [&>a>div]:items-end [&>a>div]:gap-2
+                [&>a>div>span:first-child]:text-5xl [&>a>div>span:first-child]:font-bold [&>a>div>span:first-child]:text-[#009C4A] [&>a>div>span:first-child]:leading-none
+                [&>a>div>span:nth-child(2)]:flex [&>a>div>span:nth-child(2)]:flex-col [&>a>div>span:nth-child(2)]:text-sm [&>a>div>span:nth-child(2)]:font-semibold [&>a>div>span:nth-child(2)]:text-[#009C4A] [&>a>div>span:nth-child(2)]:uppercase
+                [&>a>div>span:nth-child(2)>span]:text-gray-500 [&>a>div>span:nth-child(2)>span]:font-normal
+                [&>a:nth-child(n+5)>span:first-child]:text-[#58B06B] [&>a:nth-child(n+5)]:border-[#58B06B]">
+
+                <a href="/eventos/9486/">
+                    <span><i class="ph ph-warning"></i> Em breve</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> Pau dos Ferros</span>
+                    <h3>Vivências em Arte</h3>
+                    <div>
+                        <span>07</span>
+                        <span><span>dez</span><span>2026</span></span>
+                    </div>
+                </a>
+
+                <a href="/eventos/9595/">
+                    <span><i class="ph ph-warning"></i> Em breve</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> Caicó</span>
+                    <h3>III Feira Seridó Ciência</h3>
+                    <div>
+                        <span>25</span>
+                        <span><span>nov</span><span>2026</span></span>
+                    </div>
+                </a>
+
+                <a href="/eventos/9783/">
+                    <span><i class="ph ph-warning"></i> Em breve</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> João Câmara</span>
+                    <h3>CPOP 2026 - Competição de Pontes de Palito de Picolé do IFRN João Câmara</h3>
+                    <div>
+                        <span>04</span>
+                        <span><span>nov</span><span>2026</span></span>
+                    </div>
+                </a>
+
+                <a href="/eventos/9333/">
+                    <span><i class="ph ph-warning"></i> Em breve</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> Reitoria</span>
+                    <h3>III Encontro Anual da Comissão Própria de Avaliação</h3>
+                    <div>
+                        <span>04</span>
+                        <span><span>nov</span><span>2026</span></span>
+                    </div>
+                </a>
+
+                <a href="/eventos/9739/">
+                    <span><i class="ph ph-circle"></i> Em andamento</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> Pau dos Ferros</span>
+                    <h3>Oficina "Dando cores ao sol"</h3>
+                    <div>
+                        <span>14</span>
+                        <span><span>set</span><span>2026</span></span>
+                    </div>
+                </a>
+
+                <a href="/eventos/9764/">
+                    <span><i class="ph ph-circle"></i> Em andamento</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> São Gonçalo do Amarante</span>
+                    <h3>IFJURIS: Introdução ao Direito Constitucional</h3>
+                    <div>
+                        <span>14</span>
+                        <span><span>set</span><span>2026</span></span>
+                    </div>
+                </a>
+
+                <a href="/eventos/9714/">
+                    <span><i class="ph ph-circle"></i> Em andamento</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> Reitoria</span>
+                    <h3>ASTEEAD Conecta: gestão, monitoramento e apoio à EaD no IFRN</h3>
+                    <div>
+                        <span>14</span>
+                        <span><span>set</span><span>2026</span></span>
+                    </div>
+                </a>
+
+                <a href="/eventos/9711/">
+                    <span><i class="ph ph-circle"></i> Em andamento</span>
+                    <span title="Campus"><i class="ph ph-buildings" aria-hidden="true"></i> Currais Novos</span>
+                    <h3>Produção e exposição de Sala Temática: Abelha e Mel.</h3>
+                    <div>
+                        <span>14</span>
+                        <span><span>set</span><span>2026</span></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
