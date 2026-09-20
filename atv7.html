@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 1  Tailwind</title>
+    <!-- Tailwind CSS v4 (browser) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <header class="bg-green-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between">
+
+            <!-- LOGO + SLOGAN -->
+            <div class="flex items-center gap-4">
+                <div>
+                    <h1 class="text-xl md:text-3xl font-bold text-white no-underline">
+                        <a href="/"
+                            title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte">
+                            INSTITUTO FEDERAL
+                        </a>
+                    </h1>
+                    <p class="hidden md:block text-sm">
+                        Educação, Ciência, Cultura e Tecnologia em todo o Rio Grande do Norte
+                    </p>
+                </div>
+            </div>
+
+            <!-- MENU HAMBÚRGUER (mobile) -->
+            <button id="menuToggle" aria-label="Menu" class="md:hidden bg-transparent border-none cursor-pointer p-2">
+                <i class="ph ph-list text-2xl"></i>
+            </button>
+
+            <!-- NAVEGAÇÃO PRINCIPAL (desktop) -->
+            <nav aria-label="Navegação principal" class="hidden md:flex w-full order-3 border-t mt-4 pt-3 font-semibold">
+                <ul class="flex gap-6 items-center">
+                    <li><a href="#" class="no-underline hover:text-green-200 transition">Processos seletivos</a></li>
+                    <li><a href="#" class="no-underline hover:text-green-200 transition">Cursos</a></li>
+                    <li><a href="#" class="no-underline hover:text-green-200 transition">Campi</a></li>
+                    <li><a href="#" class="no-underline hover:text-green-200 transition">Institucional</a></li>
+                    <li><a href="#" class="no-underline hover:text-green-200 transition">Acesso à Informação</a></li>
+                    <li><a href="#" class="no-underline hover:text-green-200 transition">Eventos</a></li>
+                    <li><a href="#" class="no-underline hover:text-green-200 transition">Serviços</a></li>
+                </ul>
+            </nav>
+
+            <!-- AÇÕES (ícones, busca, contraste, modo escuro) -->
+            <div class="hidden md:flex items-center gap-3">
+
+                <!-- Ícones sociais -->
+                <div class="flex items-center gap-2">
+                    <a href="#" aria-label="Instagram" class="p-2 rounded-full border hover:text-green-200 transition"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Twitter" class="p-2 rounded-full border hover:text-green-200 transition"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="p-2 rounded-full border hover:text-green-200 transition"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="YouTube" class="p-2 rounded-full border hover:text-green-200 transition"><i class="ph ph-youtube-logo"></i></a>
+                    <a href="#" aria-label="Spotify" class="p-2 rounded-full border hover:text-green-200 transition"><i class="ph ph-spotify-logo"></i></a>
+                    <a href="#" aria-label="TikTok" class="p-2 rounded-full border hover:text-green-200 transition"><i class="ph ph-tiktok-logo"></i></a>
+                </div>
+
+                <!-- Busca -->
+                <form method="get" action="/search/" class="flex items-center">
+                    <input type="search" name="query" placeholder="Busca" aria-label="Busca"
+                        class="border rounded-full px-3 py-1 bg-gray-100 text-gray-700 focus:outline-none focus:ring" />
+                    <button type="submit" aria-label="Pesquisar" class="p-2 cursor-pointer">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </form>
+
+               <!-- Alto contraste -->
+    <button id="altocontraste" type="button" aria-label="Alto contraste"
+    class="bg-transparent border rounded-full cursor-pointer p-2">
+    <i class="ph ph-contrast"></i>
+</button>
+<!-- Modo escuro -->
+<button type="button" aria-label="Modo escuro"
+class="bg-transparent border rounded-full cursor-pointer p-2">
+<i class="ph ph-moon"></i>
+</button>
+                </button>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
