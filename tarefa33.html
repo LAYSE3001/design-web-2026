@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR" data-theme="valentine">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layse Oliveira | Página pessoal</title>
+    <title>Layse Oliveira minha página pessoal</title>
 
     <!-- DaisyUI 5 + temas + Tailwind v4 (browser) -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -31,8 +31,116 @@
             <div class="navbar-end gap-3">
                 <a href="#contato" class="btn btn-primary btn-sm">Fale comigo</a>
             </div>
+                </div>
+
+        <div id="topo" class="hero bg-base-200 py-16">
+            <div class="hero-content text-center">
+                <div class="max-w-xl">
+                    <h1 class="text-4xl md:text-5xl font-bold">Olá, eu me chamo Layse</h1>
+                    <p class="py-6">
+                        sou uma estudante de infoweb, aprendendo a transformar ideias em páginas de sites, aplicações
+                        que funcionam bem em qualquer tela.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                        <a href="#sobre" class="btn btn-outline">Saber mais</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+     <main>
+
+        <!-- ======= apresentacao ========== -->
+        <section id="sobre" class="max-w-3xl mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold mb-4">Sobre mim</h2>
+            <p class="mb-6">
+                Estou cursando infoweb no IFRN e gosto de montar interfaces com Tailwind e DaisyUI.
+                Estas são algumas das minhas áreas de interesse.
+            </p>
+            <div class="flex flex-wrap gap-2">
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-secondary">Tailwind CSS</span>
+                <span class="badge badge-accent">DaisyUI</span>
+                <span class="badge badge-outline">Git e GitHub</span>
+                <span class="badge badge-outline">Design responsivo</span>
+            </div>
+        </section>
+
+        <!-- ========== SEÇÃO 3: PROJETOS ========== -->
+        <section id="projetos" class="bg-base-200 py-12">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Projetos</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <article class="card bg-base-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Cartão de perfil</h3>
+                            <p>Primeira atividade com Tailwind: um cartão com foto, nome e botão de seguir.</p>
+                            <div class="card-actions justify-end">
+                                <a href="atv3.html" class="btn btn-primary btn-sm bg-pink-600 border-pink-600 text-white hover:bg-pink-700 hover:border-pink-700">Ver projeto</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card bg-base-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Seção de notícias</h3>
+                            <p>Grade de notícias responsiva, com imagem, categoria, data e título em cada card.</p>
+                            <div class="card-actions justify-end">
+                                <a href="atv8.html" class="btn btn-outline btn-sm border-pink-600 text-pink-600 hover:bg-pink-600 hover:border-pink-600 hover:text-white">Ver projeto</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card bg-base-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Footer institucional</h3>
+                            <p>Rodapé com mapa do site, banners e informações de contato da instituição.</p>
+                            <div class="card-actions justify-end">
+                                <a href="atividade-9-footer.html" class="btn btn-outline btn-sm border-pink-600 text-pink-600 hover:bg-pink-600 hover:border-pink-600 hover:text-white">Ver projeto</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SEÇÃO 4: CONTATO ========== -->
+        <section id="contato" class="max-w-xl mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold mb-6">Contato</h2>
+
+            <div role="alert" class="alert alert-info mb-6">
+                <span>Respondo mensagens em até dois dias úteis.</span>
+            </div>
+
+            <form class="flex flex-col gap-4">
+                <fieldset class="fieldset">
+                    <legend class="fieldset-legend">Nome</legend>
+                    <input type="text" class="input w-full" placeholder="Seu nome" />
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend class="fieldset-legend">E-mail</legend>
+                    <input type="email" class="input w-full" placeholder="voce@exemplo.com" />
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend class="fieldset-legend">Mensagem</legend>
+                    <textarea class="textarea w-full" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary bg-pink-600 border-pink-600 text-white hover:bg-pink-700 hover:border-pink-700">Enviar mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer footer-center bg-base-200 p-4 text-sm">
+        <p>Layse Oliveira, 2026</p>
+    </footer>
 
 </body>
 

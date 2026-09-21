@@ -1,4 +1,6 @@
+# Tarefa 33: Página pessoal com DaisyUI
 
+# ATIVIDADES ANTERIORES
 ## Tarefa 10 – Seção de eventos
 
 **Objetivo:** A partir do código HTML limpo (sem classes), você deve adicionar classes Tailwind para estilizar a seção "Eventos" do site do IFRN, reproduzindo o layout da imagem de referência.
@@ -118,8 +120,8 @@ Aqui é uma parte do código, mas é preciso fazer os ajustes mais finos.
 ```
 
 
-=======
+
 o inverno está chegando
- origin/atividade-2
+
 o inverno está chegando
 
