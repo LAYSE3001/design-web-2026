@@ -1,4 +1,38 @@
 # Tarefa 33: Página pessoal com DaisyUI
+Tarefa 33: Minha página pessoal com DaisyUI
+
+Nesta tarefa eu montei uma página pessoal de apresentação usando os componentes do DaisyUI junto com o Tailwind. A página está no arquivo tarefa33.html e tem quatro seções: cabeçalho, sobre mim, projetos e contato.
+
+Para ver a página, é só abrir o tarefa33.html no navegador.
+
+1. Componentes DaisyUI utilizados
+Componente	Onde aparece na página
+navbar	Topo da página, com meu nome, os links de navegação, o botão de tema e o botão "Fale comigo"
+menu (menu-horizontal)	Links Sobre, Projetos e Contato dentro da navbar
+hero	Logo abaixo da navbar, com o título, uma frase de apresentação e dois botões
+btn (btn-primary, btn-outline, btn-ghost)	Navbar, hero, cards e formulário. O btn-primary está em "Fale comigo", "Ver projetos" e "Enviar mensagem". O btn-outline está em "Saber mais" e nos botões de dois cards. O btn-ghost é o meu nome na navbar
+badge (badge-primary, badge-secondary, badge-accent, badge-outline)	Seção "Sobre mim", destacando as tecnologias e áreas que eu estudo
+card (card-body, card-title, card-actions)	Seção "Projetos": três cards, um para cada atividade que eu já fiz
+alert (alert-info)	Seção "Contato", com uma informação de contato
+input, textarea e fieldset	Formulário de contato (nome, e-mail e mensagem)
+toggle com theme-controller	Navbar, para alternar entre o tema claro e o escuro
+footer (footer-center)	Rodapé da página
+2. Por que escolhi navbar e hero no cabeçalho
+
+Usei os dois porque eles resolvem coisas diferentes. A navbar fica fixa no topo e serve para navegar: mesmo no fim da página, dá para voltar para outra seção ou ir direto para o contato. Já o hero é a primeira coisa que a pessoa vê, e ali eu me apresento e coloco os dois botões principais.
+
+Se eu usasse só a navbar, a página começaria direto no texto, sem um destaque. Se usasse só o hero, ficaria mais difícil de navegar. Juntos, a navbar organiza e o hero apresenta.
+
+3. Pontos de ajuste com Tailwind
+Cor dos botões: os botões do DaisyUI ficam com a cor do tema, e eu queria todos rosa. Mantive as classes btn-primary e btn-outline e acrescentei classes do Tailwind por cima, como bg-pink-600 border-pink-600 text-white. Assim o DaisyUI continua dando o formato do botão, e o Tailwind troca só a cor. Fiz isso nos botões e não no tema inteiro, porque assim o resto da página segue as cores do tema.
+Grade dos cards: o DaisyUI cria o card, mas não organiza vários cards lado a lado. Usei grid grid-cols-1 md:grid-cols-3 gap-6 do Tailwind: uma coluna no celular e três colunas no computador.
+Navbar no celular: usei hidden md:flex para esconder os links do centro em telas pequenas, senão eles não cabem, e sticky top-0 para a navbar acompanhar a rolagem.
+Largura e centralização: as seções usam max-w-3xl, max-w-5xl e mx-auto para o texto não ficar esticado em telas grandes.
+4. Reflexão sobre temas
+
+Testei dois temas: o light (claro) e o dark (escuro), trocando o data-theme. Os dois funcionam, porque as cores do fundo, do texto e dos cards vêm das classes do DaisyUI (bg-base-100, bg-base-200, text-base-content) e acompanham o tema sozinhas.
+
+Na minha opinião, o tema claro ficou mais coerente com o conteúdo. A página é uma apresentação leve, com botões rosa, e o fundo claro deixa o rosa mais evidente. No escuro, o texto continua legível, mas o rosa dos botões perde um pouco do destaque.
 
 # ATIVIDADES ANTERIORES
 ## Tarefa 10 – Seção de eventos
